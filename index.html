@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Visual para Nuevos Autónomos en España</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F0F4F8;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 350px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+                max-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-[#05668D] mb-2">Guía Visual del Autónomo</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">Tu ruta esencial para empezar a trabajar por tu cuenta en España con éxito.</p>
+        </header>
+
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <section class="lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-[#05668D] mb-4 text-center">🚀 Tus Primeros Pasos: El Alta</h2>
+                <p class="text-center text-gray-600 mb-8">El orden es clave para asegurar tus bonificaciones. Sigue esta secuencia para un inicio sin problemas.</p>
+                <div class="relative flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
+                    <div class="relative md:hidden w-px h-16 bg-[#00A6A6]"></div>
+                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-[#00A6A6] -translate-y-1/2"></div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center">
+                        <div class="bg-[#00A6A6] text-white rounded-full w-20 h-20 flex items-center justify-center text-3xl font-bold border-4 border-white shadow-md">1</div>
+                        <h3 class="mt-4 text-xl font-bold">Hacienda</h3>
+                        <p class="mt-1 text-gray-600">Regístrate con el modelo 036/037. Informas del inicio de tu actividad económica.</p>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center">
+                        <div class="bg-[#00A6A6] text-white rounded-full w-20 h-20 flex items-center justify-center text-3xl font-bold border-4 border-white shadow-md">2</div>
+                        <h3 class="mt-4 text-xl font-bold">Seguridad Social</h3>
+                        <p class="mt-1 text-gray-600">Date de alta el mismo día. La Ley de Emprendedores facilita este trámite.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="md:col-span-2 lg:col-span-1 bg-white rounded-lg shadow-lg p-6 flex flex-col">
+                <h2 class="text-2xl font-bold text-[#05668D] mb-4">💰 La Cuota de Autónomos</h2>
+                <p class="text-gray-600 mb-4">Es tu pago mensual a la Seguridad Social. La domiciliación es automática, ¡asegura tener saldo!</p>
+                <div class="text-center p-4 bg-[#F28F3B] bg-opacity-10 rounded-lg mb-4">
+                    <p class="text-sm text-[#F28F3B] font-bold">TARIFA PLANA (1er año)</p>
+                    <p class="text-5xl font-extrabold text-[#F28F3B]">~80€</p>
+                    <p class="text-sm text-[#F28F3B]">Cuota reducida inicial</p>
+                </div>
+                <div class="text-center p-4 bg-[#E84855] bg-opacity-10 rounded-lg">
+                    <p class="text-sm text-[#E84855] font-bold">¡OJO CON EL IMPAGO!</p>
+                    <p class="text-5xl font-extrabold text-[#E84855]">~350€</p>
+                    <p class="text-sm text-[#E84855]">Pagarás la cuota completa sin bonificar</p>
+                </div>
+                <p class="text-xs text-gray-500 mt-4">*La tarifa plana es prorrogable un segundo año si tus ingresos no superan el SMI. En Madrid, puedes solicitar la devolución del 100% de la cuota del primer año.</p>
+            </section>
+
+            <section class="md:col-span-2 bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-[#05668D] mb-4 text-center">🗓️ Tu Calendario Fiscal</h2>
+                <p class="text-center text-gray-600 mb-6">Estas son las fechas clave para presentar tus impuestos. Márcalas en rojo para evitar recargos.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="p-4 bg-gray-100 rounded-lg">
+                        <p class="text-2xl font-bold">ABRIL</p>
+                        <p class="text-sm">1er Trimestre</p>
+                        <p class="text-xs">(1 al 20)</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg">
+                        <p class="text-2xl font-bold">JULIO</p>
+                        <p class="text-sm">2º Trimestre</p>
+                        <p class="text-xs">(1 al 20)</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg">
+                        <p class="text-2xl font-bold">OCTUBRE</p>
+                        <p class="text-sm">3er Trimestre</p>
+                        <p class="text-xs">(1 al 20)</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg">
+                        <p class="text-2xl font-bold">ENERO</p>
+                        <p class="text-sm">4º Trimestre</p>
+                        <p class="text-xs">(1 al 20)</p>
+                    </div>
+                </div>
+                 <div class="mt-6 text-center">
+                    <h3 class="font-bold text-[#05668D]">Declaraciones Anuales</h3>
+                    <p class="text-gray-600 text-sm">Resúmenes anuales en Enero (IVA/Retenciones) y Declaración de la Renta (Primavera).</p>
+                </div>
+            </section>
+
+            <section class="md:col-span-1 bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-[#05668D] mb-2">Impuestos Trimestrales</h2>
+                <p class="text-gray-600 mb-4">Los dos modelos más comunes que presentarás cada tres meses.</p>
+                <div class="chart-container">
+                    <canvas id="quarterlyTaxesChart"></canvas>
+                </div>
+                <p class="text-xs text-center text-gray-500 mt-2">La obligatoriedad de presentar cada modelo depende de tu actividad y régimen fiscal.</p>
+            </section>
+
+            <section class="md:col-span-2 bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-[#05668D] mb-4">🧾 La Factura Perfecta</h2>
+                <p class="text-gray-600 mb-6">Tus facturas deben ser claras, correlativas y contener todos estos elementos para ser válidas.</p>
+                <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 bg-gray-50">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <p class="font-bold">Tu Nombre y NIF</p>
+                            <p class="text-sm">Tu Dirección Fiscal</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-xl font-black">FACTURA</p>
+                            <p class="text-sm">Nº: <span class="font-mono bg-gray-200 px-2 py-1 rounded">2025-001</span></p>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <p class="font-bold">Cliente:</p>
+                        <p class="text-sm">Nombre/Razón Social del Cliente</p>
+                        <p class="text-sm">NIF del Cliente</p>
+                    </div>
+                    <div class="flex justify-between text-sm mb-6">
+                        <p>Fecha de emisión: <span class="font-mono bg-gray-200 px-2 py-1 rounded">DD/MM/AAAA</span></p>
+                    </div>
+                    <div class="flow-root">
+                        <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                          <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+                            <table class="min-w-full divide-y divide-gray-300">
+                              <thead>
+                                <tr>
+                                  <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold sm:pl-0">Descripción</th>
+                                  <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold">Base Imponible</th>
+                                </tr>
+                              </thead>
+                              <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                  <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">Servicio / Producto Detallado</td>
+                                  <td class="whitespace-nowrap px-3 py-4 text-sm">100,00 €</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right font-semibold pr-3 pt-4">Subtotal</td>
+                                    <td class="px-3 pt-4">100,00 €</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right pr-3">IVA (21%)</td>
+                                    <td class="px-3">21,00 €</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right pr-3">IRPF (-15%)</td>
+                                    <td class="px-3">-15,00 €</td>
+                                </tr>
+                                 <tr>
+                                    <td class="text-right font-extrabold text-lg pr-3 pt-2">TOTAL</td>
+                                    <td class="px-3 pt-2 font-extrabold text-lg">106,00 €</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <section class="md:col-span-1 bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-[#05668D] mb-2">📊 Gastos Deducibles</h2>
+                <p class="text-gray-600 mb-4">Estos son algunos gastos que puedes deducir si están 100% ligados a tu actividad. ¡Guarda siempre la factura completa!</p>
+                <div class="chart-container">
+                    <canvas id="deductibleExpensesChart"></canvas>
+                </div>
+                <p class="text-xs text-center text-gray-500 mt-2">La deducibilidad de ciertos gastos como vehículo o suministros del hogar tiene condiciones específicas.</p>
+            </section>
+
+            <section class="md:col-span-1 bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-[#05668D] mb-4">La Retención de IRPF</h2>
+                <p class="text-gray-600 mb-6">Es un adelanto de impuestos que tu cliente retiene y paga por ti a Hacienda.</p>
+                <div class="flex flex-col gap-4">
+                    <div class="bg-[#E0F7FA] p-4 rounded-lg">
+                        <h3 class="font-bold text-[#05668D] mb-1">Tipo General</h3>
+                        <div class="text-center">
+                            <p class="text-5xl font-extrabold text-[#05668D]">15%</p>
+                            <p class="text-sm text-gray-600 mt-1">Se aplica a clientes que son empresas o autónomos.</p>
+                        </div>
+                    </div>
+                     <div class="bg-[#F28F3B] bg-opacity-10 p-4 rounded-lg">
+                        <h3 class="font-bold text-[#F28F3B] mb-1">Tarifa Reducida</h3>
+                        <div class="text-center">
+                            <p class="text-5xl font-extrabold text-[#F28F3B]">7%</p>
+                            <p class="text-sm text-gray-600 mt-1">Solo para nuevos autónomos, durante sus primeros dos años de actividad.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-xs text-center text-gray-500 mt-4">Si facturas a un cliente particular, no debes aplicar retención. Siempre debes presentar el modelo 130 de IRPF.</p>
+            </section>
+
+            <section class="md:col-span-1 bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-[#05668D] mb-4">El IVA: Un impuesto clave</h2>
+                <p class="text-gray-600 mb-6">Es un impuesto indirecto que aplicas en tus ventas y que Hacienda te devuelve de tus compras.</p>
+                <div class="flex flex-col gap-4">
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <h3 class="font-bold text-[#05668D] mb-1">IVA devengado</h3>
+                        <p class="text-sm text-gray-600 mt-1">El IVA que **cobras** en tus facturas emitidas.</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <h3 class="font-bold text-[#05668D] mb-1">IVA soportado</h3>
+                        <p class="text-sm text-gray-600 mt-1">El IVA que **pagas** en las facturas de tus proveedores.</p>
+                    </div>
+                </div>
+                 <div class="text-center mt-4">
+                    <p class="text-xl font-bold text-[#E84855] mb-2">¡Ojo con la liquidación!</p>
+                    <p class="text-sm text-gray-600">Al liquidar el IVA, debes pagar a Hacienda la diferencia: **IVA devengado - IVA soportado**.</p>
+                 </div>
+            </section>
+
+            <section class="lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-[#05668D] mb-4 text-center">💡 Consejos Pro para el Éxito</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center p-4">
+                        <span class="text-4xl">🏦</span>
+                        <h3 class="font-bold mt-2">Cuenta bancaria única</h3>
+                        <p class="text-sm text-gray-600">Separa tus finanzas personales de las profesionales. Simplifica la contabilidad.</p>
+                    </div>
+                     <div class="text-center p-4">
+                        <span class="text-4xl">🗂️</span>
+                        <h3 class="font-bold mt-2">Organización digital</h3>
+                        <p class="text-sm text-gray-600">Crea carpetas para facturas emitidas, recibidas y modelos de impuestos presentados.</p>
+                    </div>
+                     <div class="text-center p-4">
+                        <span class="text-4xl">🐖</span>
+                        <h3 class="font-bold mt-2">Hucha de impuestos</h3>
+                        <p class="text-sm text-gray-600">Aparta un 20-30% de cada ingreso en una cuenta separada para pagar IVA e IRPF.</p>
+                    </div>
+                     <div class="text-center p-4">
+                        <span class="text-4xl">🔔</span>
+                        <h3 class="font-bold mt-2">Vigila los plazos</h3>
+                        <p class="text-sm text-gray-600">Usa un calendario o alertas para no olvidar ninguna fecha límite de Hacienda o S.S.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lg:col-span-3 bg-[#05668D] text-white rounded-lg shadow-lg p-8">
+                 <h2 class="text-3xl font-bold mb-4 text-center">📡 El Futuro es Digital: Ley Crea y Crece</h2>
+                 <p class="text-center text-blue-100 max-w-4xl mx-auto mb-8">Prepárate para la facturación electrónica obligatoria. El Excel y el Word dejarán de ser válidos para facturar a otras empresas.</p>
+                 <div class="flex flex-col md:flex-row items-center justify-around gap-8">
+                    <div class="text-center">
+                        <p class="text-lg text-blue-200 font-bold">FECHAS CLAVE</p>
+                        <p class="text-xl font-bold mb-1">Empresas con facturación > 8M€:</p>
+                        <p class="text-3xl font-black text-[#F28F3B] mb-4">Finales de 2025</p>
+                        <p class="text-xl font-bold mb-1">Resto de empresas y autónomos:</p>
+                        <p class="text-3xl font-black text-[#F28F3B]">Finales de 2026</p>
+                    </div>
+                    <div class="w-full md:w-auto">
+                        <h3 class="font-bold text-xl text-center mb-4">El nuevo sistema "Verifactu"</h3>
+                         <div class="flex items-center gap-4">
+                            <div class="text-center p-3 bg-blue-900 bg-opacity-50 rounded-lg">
+                                <p class="text-2xl">💻</p>
+                                <p class="font-bold">Software Certificado</p>
+                            </div>
+                            <p class="text-2xl font-bold text-[#F28F3B]">➜</p>
+                             <div class="text-center p-3 bg-blue-900 bg-opacity-50 rounded-lg">
+                                <p class="text-2xl">🔗</p>
+                                <p class="font-bold">Factura con QR</p>
+                            </div>
+                            <p class="text-2xl font-bold text-[#F28F3B]">➜</p>
+                             <div class="text-center p-3 bg-blue-900 bg-opacity-50 rounded-lg">
+                                <p class="text-2xl">🏛️</p>
+                                <p class="font-bold">Envío a Hacienda</p>
+                            </div>
+                         </div>
+                    </div>
+                 </div>
+            </section>
+
+            <section class="lg:col-span-3 bg-white rounded-lg shadow-lg p-6 mt-8">
+                <h2 class="text-2xl font-bold text-[#05668D] mb-4 text-center">⚠️ Novedades Fiscales: Bizum</h2>
+                <p class="text-center text-gray-600 mb-6">A partir de 2026, los bancos deberán comunicar a la Agencia Tributaria todas las operaciones realizadas a través de Bizum de forma mensual.</p>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                    <div class="flex flex-col items-center text-center p-4">
+                        <span class="text-5xl">🏦</span>
+                        <h3 class="font-bold mt-2">Tu Banco</h3>
+                        <p class="text-sm text-gray-600">Reportará todas tus operaciones.</p>
+                    </div>
+                    <p class="text-3xl font-bold text-[#F28F3B] hidden md:block">➜</p>
+                    <div class="flex flex-col items-center text-center p-4">
+                        <span class="text-5xl">🗓️</span>
+                        <h3 class="font-bold mt-2">Mensualmente</h3>
+                        <p class="text-sm text-gray-600">Se compartirán los datos con Hacienda.</p>
+                    </div>
+                     <p class="text-3xl font-bold text-[#F28F3B] hidden md:block">➜</p>
+                    <div class="flex flex-col items-center text-center p-4">
+                        <span class="text-5xl">🕵️</span>
+                        <h3 class="font-bold mt-2">Hacienda</h3>
+                        <p class="text-sm text-gray-600">Tendrá acceso a la información.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        const wrapLabel = (label) => {
+            const maxLength = 16;
+            if (label.length <= maxLength) return label;
+            
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+
+            words.forEach(word => {
+                if ((currentLine + word).length > maxLength) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        };
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+        
+        const colors = {
+            teal: '#00A6A6',
+            orange: '#F28F3B',
+            red: '#E84855',
+            gray: '#C5C3C6',
+            darkBlue: '#05668D'
+        };
+
+        const quarterlyTaxesCtx = document.getElementById('quarterlyTaxesChart').getContext('2d');
+        new Chart(quarterlyTaxesCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Modelo 303 (IVA)', 'Modelo 130 (IRPF)'],
+                datasets: [{
+                    label: 'Impuestos Trimestrales',
+                    data: [50, 50],
+                    backgroundColor: [colors.teal, colors.orange],
+                    borderColor: '#ffffff',
+                    borderWidth: 4,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                    },
+                    tooltip: {
+                       callbacks: {
+                           title: tooltipTitleCallback
+                       }
+                    }
+                },
+                cutout: '60%'
+            }
+        });
+        
+        const deductibleExpensesCtx = document.getElementById('deductibleExpensesChart').getContext('2d');
+        const expenseLabels = [
+            'Material y herramientas de trabajo', 
+            'Teléfono, internet y suministros', 
+            'Gestoría, seguros, marketing', 
+            'Vehículo y transporte',
+            'Formación y Cursos'
+        ].map(wrapLabel);
+        
+        new Chart(deductibleExpensesCtx, {
+            type: 'bar',
+            data: {
+                labels: expenseLabels,
+                datasets: [{
+                    label: 'Ejemplos de Gastos Deducibles',
+                    data: [85, 70, 65, 50, 40],
+                    backgroundColor: [
+                        colors.teal,
+                        colors.orange,
+                        colors.darkBlue,
+                        colors.red,
+                        colors.gray
+                    ],
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false,
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        grid: {
+                           display: false
+                        }
+                    },
+                    y: {
+                        grid: {
+                           display: false
+                        }
+                    }
+                }
+            }
+        });
+
+    </script>
+
+</body>
+</html>
